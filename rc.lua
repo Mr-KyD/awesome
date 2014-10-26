@@ -113,7 +113,7 @@ myterminals= {
 }
 
 mywebclient = {
-				{ "Firefox", "/usr/bin/firefox" },
+				{ "Firefox", "/usr/bin/firefox", "/usr/share/pixmaps/firefox.png" },
 				{ "Chromium", "/usr/bin/chromium" }
 			}
 
@@ -121,15 +121,24 @@ mymailclient = {
 				{ "Claws", "/usr/bin/claws-mail" }
 }
 
+myimclient = {
+						
+				{ "Pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/32x32/apps/pidgin.png" },
+				{ "Skype", "/opt/bin/skype", "/usr/share/icons/hicolor/32x32/apps/skype.png" }
+}
+
 myoffice = {
-				{ "Libre Office", "/usr/bin/libreoffice" },
-				{ "Calc", "/usr/bin/localc" },
-				{ "Writer", "/usr/bin/lowriter" },
-				{ "Gvim", "/usr/bin/gvim" }
+				{ "Libre Office", "/usr/bin/libreoffice", "/usr/share/icons/hicolor/32x32/apps/libreoffice-main.png" },
+				{ "Calc", "/usr/bin/localc", "/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png" },
+				{ "Writer", "/usr/bin/lowriter", "/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png" },
 }
 
 mygames = {
 			{ "Steam", "STEAM_RUNTIME=1 /usr/bin/steam"}
+	}
+
+mymusic = {
+			{ "Spotify", "/usr/bin/spotify", "/usr/share/icons/hicolor/32x32/apps/spotify-client.png"}
 	}
 
 mypelis = {
@@ -137,19 +146,22 @@ mypelis = {
 	}
 
 mydonwloads = {
-		{"Jdonwloader","/usr/bin/java -jar ~/.jd/jdupdate.jar NIGHTLY"}
+		{"Jdonwloader","/usr/bin/java -jar ~/.jd/jdupdate.jar NIGHTLY", "~/.jd/jd/img/logo/logo-48x48.png"}
 	}
+
 myconfigs = {
-			{ "Adobe Flash", "/usr/bin/flash-player-properties"},
-			{ "Java", "/usr/bin/jcontrol"}
+			{ "Adobe Flash", "/usr/bin/flash-player-properties", "/usr/share/icons/hicolor/32x32/apps/flash-player-properties.png"},
+			{ "Java", "/usr/bin/jcontrol", "/usr/share/pixmaps/sun-jcontrol-oracle-jre-bin-1.8.png"}
 	}
 
 mymainmenu = awful.menu({ items = { { "HOME", "/usr/bin/thunar", beautiful.awesome_icon },
 												{ "Terminals", myterminals },
 												{ "Web", mywebclient },
 												{ "Mail", mymailclient },
+												{ "IM", myimclient },
 												{ "Office", myoffice },
 												{ "Games", mygames },
+												{ "Music", mymusic },
 												{ "Pelis", mypelis },
 												{ "awesome", myawesomemenu },
 												{ "Configs", myconfigs }

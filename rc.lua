@@ -122,7 +122,6 @@ mymailclient = {
 }
 
 myimclient = {
-						
 				{ "Pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/32x32/apps/pidgin.png" },
 				{ "Skype", "/opt/bin/skype", "/usr/share/icons/hicolor/32x32/apps/skype.png" }
 }
